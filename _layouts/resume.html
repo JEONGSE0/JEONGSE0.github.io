@@ -129,20 +129,13 @@
             {% endfor %}
           </div>
           {% endif %}
-          {% if project.graphs %}
-          <div class="project-graph-grid">
-            {% for graph in project.graphs %}
-            <figure class="project-media project-graph">
-              <img src="{{ graph.src | relative_url }}" alt="{{ graph.caption | default: project.project }}" itemprop="image">
-              {% if graph.caption %}
-              <figcaption>{{ graph.caption }}</figcaption>
-              {% endif %}
-            </figure>
-            {% endfor %}
-          </div>
-          {% if project.graph_caption %}
-          <p class="project-graph-caption">{{ project.graph_caption }}</p>
-          {% endif %}
+          {% if project.result_image %}
+          <figure class="project-media project-result-image">
+            <img src="{{ project.result_image.src | relative_url }}" alt="{{ project.result_image.caption | default: project.project }}" itemprop="image">
+            {% if project.result_image.caption %}
+            <figcaption>{{ project.result_image.caption }}</figcaption>
+            {% endif %}
+          </figure>
           {% endif %}
           {% if project.image %}
           <figure class="project-media">

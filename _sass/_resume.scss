@@ -247,37 +247,12 @@
     }
   }
 
-  .project-graph-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: .4rem;
+  .project-result-image {
     margin-top: 0;
-
-    @include media_larger_than_mobile {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .project-media {
-      margin: 0;
-    }
   }
 
-  .project-graph img {
-    height: auto;
-    min-height: 0;
-    object-fit: contain;
-    background: #fff;
-  }
-
-  .project-graph figcaption {
-    margin-top: .25rem;
-    font-size: .75rem;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .project-graph-caption {
-    margin: .35rem 0 0;
+  .project-result-image figcaption {
+    margin-top: .35rem;
     font-size: .8rem;
     line-height: 1.25;
     color: #666;
