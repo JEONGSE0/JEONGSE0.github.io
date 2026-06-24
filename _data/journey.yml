@@ -46,4 +46,5 @@
     - title: VR simulation setup
       image: "picture/up 7 vr.png"
     - title: Final conference during M.S.
-      image: "picture/up 8 last conference in my m.s..png"
+      image: "picture/up 8 last conference in my m.s. - right turn.png"
+      rotate: right
