@@ -2,11 +2,13 @@
 - degree: M.S. Mechanical Engineering, expected Aug 2026
   uni: Kumoh National Institute of Technology
   year: Mar 2024 &mdash; Aug 2026
-  award: ROS, EMG-driven Manipulator Control, Smart Factory, Object Detection
+  awards: 
+   - award: ROS, EMG-driven Manipulator Control, Smart Factory, Object Detection
   summary: If you had any meaningful roles at college, feel free to write about them here
 
 - degree: B.S. Mechanical Design Engineering
   uni: Kumoh National Institute of Technology
   year: Mar 2020 &mdash; Feb 2024
-  award: Reinforcement Learning, Physics-based Simulation, Active Suspension Control, Autonomous Emergency Braking System
+  awards: 
+   - award: Reinforcement Learning, Physics-based Simulation, Active Suspension Control, Autonomous Emergency Braking System
   summary: You can choose to have either a single or multiple awards
