@@ -1,6 +1,8 @@
 # Site settings
 title: "Jeongseo Jang"
 description: "M.S. researcher in Mechanical Engineering."
+url: "https://JEONGSE0.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
