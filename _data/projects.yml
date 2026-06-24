@@ -1,5 +1,23 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
+# Optional media fields for each project:
+# image: images/projects/example.jpg
+# image: images/projects/demo.gif
+# video: images/projects/demo.mp4
+# media:
+#   - type: image
+#     src: images/projects/demo.gif
+#     caption: Demo GIF
+#   - type: video
+#     src: images/projects/demo.mp4
+#     caption: Demo video
+# videos:
+#   - src: images/projects/demo-1.mp4
+#     caption: Demo 1
+# validation_video:
+#   src: images/projects/validation.mp4
+#   caption: Validation demo
+# media_caption: Short caption for the image or video
 
 # jazznotes.io
 - project: EMG-Driven Dexterous Manipulation 🦾
@@ -7,6 +25,10 @@
   duration: Aug. 2025 &mdash; Aug.2026
   # url: "#"
   description: EMG-driven robotic hand control with ROS2, reinforcement learning, and virtual reality simulation.<br>
+  media:
+    - type: image
+      src: images/result.gif
+      caption: Validation demo
 
 
 # Springfield Community Outreach Group
@@ -15,6 +37,13 @@
   duration: Jul. 2022 &mdash; Aug. 2023 and Feb. 2025 &mdash; June. 2025
   # url: "#"
   description: Motion recognition-based robot arm control using ROS, IMU, and EMG signals.<br>
+  media:
+    - type: image
+      src: images/obstacle.gif
+      caption: Obstacle avoidance demo
+    - type: image
+      src: images/Manipulator.png
+      caption: Manipulator setup
 
 
 # jazznotes.io
@@ -23,6 +52,10 @@
   duration: Jul. 2024 &mdash; Nov. 2024
   # url: "#"
   description: RL-based continuous braking control for autonomous emergency braking in intersection scenarios.<br>
+  media:
+    - type: image
+      src: images/carmaker.gif
+      caption: CarMaker simulation demo
 
 
 # Springfield Community Outreach Group
@@ -31,3 +64,7 @@
   duration: Feb. 2024 &mdash; June. 2024
   # url: "#"
   description: Fuzzy-PID adaptive control for active vehicle suspension under dynamic road conditions.<br>
+  media:
+    - type: image
+      src: images/Suspension.png
+      caption: Active suspension control result

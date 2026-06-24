@@ -172,6 +172,61 @@
   }
 
   .resume-item-copy { margin: .75rem 0 0; }
+
+  .project-media {
+    margin: 1rem 0 0;
+
+    img,
+    video {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      @include border-radius(4px);
+    }
+
+    figcaption {
+      margin-top: .5rem;
+      font-size: .875rem;
+      color: #666;
+    }
+  }
+
+  .project-media-grid,
+  .project-video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+    margin-top: 1rem;
+
+    @include media_larger_than_mobile {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .project-media {
+      margin: 0;
+    }
+  }
+
+  .project-media-compact img,
+  .project-media-compact video {
+    max-width: none;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #000;
+  }
+
+  .project-validation-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .project-media {
+      width: 100%;
+      max-width: 640px;
+      margin: 0;
+    }
+  }
 }
 
 // footer styles

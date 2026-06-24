@@ -110,6 +110,72 @@
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
+          {% if project.media %}
+          <div class="project-media-grid">
+            {% for media in project.media %}
+            <figure class="project-media project-media-compact">
+              {% if media.type == 'video' %}
+              <video controls preload="metadata">
+                <source src="{{ media.src | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% else %}
+              <img src="{{ media.src | relative_url }}" alt="{{ media.caption | default: project.project }}" itemprop="image">
+              {% endif %}
+              {% if media.caption %}
+              <figcaption>{{ media.caption }}</figcaption>
+              {% endif %}
+            </figure>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if project.image %}
+          <figure class="project-media">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.project }}" itemprop="image">
+            {% if project.media_caption %}
+            <figcaption>{{ project.media_caption }}</figcaption>
+            {% endif %}
+          </figure>
+          {% endif %}
+          {% if project.videos %}
+          <div class="project-video-grid">
+            {% for media in project.videos %}
+            <figure class="project-media project-media-compact">
+              <video controls preload="metadata">
+                <source src="{{ media.src | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% if media.caption %}
+              <figcaption>{{ media.caption }}</figcaption>
+              {% endif %}
+            </figure>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if project.validation_video %}
+          <div class="project-validation-media">
+            <figure class="project-media">
+              <video controls preload="metadata">
+                <source src="{{ project.validation_video.src | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% if project.validation_video.caption %}
+              <figcaption>{{ project.validation_video.caption }}</figcaption>
+              {% endif %}
+            </figure>
+          </div>
+          {% endif %}
+          {% if project.video %}
+          <figure class="project-media">
+            <video controls preload="metadata">
+              <source src="{{ project.video | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            {% if project.media_caption %}
+            <figcaption>{{ project.media_caption }}</figcaption>
+            {% endif %}
+          </figure>
+          {% endif %}
         </div>
         {% endfor %}
 
