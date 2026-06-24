@@ -28,7 +28,7 @@
   media:
     - type: image
       src: images/result.gif
-      caption: Validation demo
+      caption: RL Result
 
 
 # Springfield Community Outreach Group
@@ -40,10 +40,10 @@
   media:
     - type: image
       src: images/obstacle.gif
-      caption: Obstacle avoidance demo
+      caption: Obstacle avoidance RL result
     - type: image
       src: images/Manipulator.png
-      caption: Manipulator setup
+      caption: Scenario of robot arm manipulation control (smart factory)
 
 
 # jazznotes.io
@@ -55,7 +55,14 @@
   media:
     - type: image
       src: images/carmaker.gif
-      caption: CarMaker simulation demo
+      caption: Results of RL-based braking control in intersection scenarios
+  graphs:
+    - src: images/carmaker 1.png
+      caption: Braking scenario 1
+    - src: images/carmaker 2.png
+      caption: Braking scenario 2
+    - src: images/carmaker 3.png
+      caption: Braking scenario 3
 
 
 # Springfield Community Outreach Group
