@@ -1,0 +1,49 @@
+# Research Journey
+- group: Undergraduate Research
+  items:
+    - title: Arduino prototype I
+      image: "picture/under 1 aduino .png"
+    - title: Arduino prototype II
+      image: "picture/under 2 aduino .png"
+    - title: Team project
+      image: "picture/under 3 team project .png"
+    - title: Manipulator control using Myo
+      image: "picture/under 4 manipulator control using myo.png"
+    - title: Object detection
+      image: "picture/under 5 object detaction.png"
+    - title: Autonomous driving system using YOLO
+      image: "picture/under 6 autonomous driving system using yolo - right turn.png"
+      rotate: right
+    - title: Autonomous driving environment
+      image: "picture/under 7 autonomous env - left turn.png"
+      rotate: left
+    - title: Camera calibration
+      image: "picture/under 8 camera calibration - right turn.png"
+      rotate: right
+    - title: AR marker experiment
+      image: "picture/under 9 ar marker.png"
+    - title: System validation
+      image: "picture/under 10 - 180 turn.png"
+      rotate: half
+    - title: Team competition
+      image: "picture/under 11 team 대회 출전.png"
+
+- group: M.S. Research
+  items:
+    - title: "First oral presentation: active suspension"
+      image: "picture/up 1 - first oral suspension.png"
+    - title: CarMaker poster presentation
+      image: "picture/up 2 carmaker poster.png"
+    - title: CarMaker oral presentation
+      image: "picture/up 3 carmaker oral - right turn.png"
+      rotate: right
+    - title: Robot obstacle avoidance presentation
+      image: "picture/up 4 second oral robot obstacle avoidance.png"
+    - title: Georgia Tech visit I
+      image: "picture/up 5 georgia tech 1.png"
+    - title: Georgia Tech visit II
+      image: "picture/up 6 georgia tech 2.png"
+    - title: VR simulation setup
+      image: "picture/up 7 vr.png"
+    - title: Final conference during M.S.
+      image: "picture/up 8 last conference in my m.s..png"

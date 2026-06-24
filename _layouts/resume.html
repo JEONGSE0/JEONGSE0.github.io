@@ -288,6 +288,34 @@
       <!-- end Links -->
       {% endif %}
 
+      {% if site.data.journey %}
+      <!-- begin Research Journey -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Research Journey</h2>
+        </header>
+
+        {% for journey_group in site.data.journey %}
+        <div class="journey-group">
+          <h3 class="journey-group-title">{{ journey_group.group }}</h3>
+          <div class="journey-grid">
+            {% for item in journey_group.items %}
+            <figure class="journey-item">
+              <div class="journey-frame">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="journey-image{% if item.rotate %} journey-rotate-{{ item.rotate }}{% endif %}">
+              </div>
+              <figcaption>{{ item.title }}</figcaption>
+            </figure>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Research Journey -->
+      {% endif %}
+
       {% if site.resume_print_social_links %}
       <!-- begin Print Social Links -->
       <section class="content-section print-only">

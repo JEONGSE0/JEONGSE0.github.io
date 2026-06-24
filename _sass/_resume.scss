@@ -279,6 +279,77 @@
       margin: 0;
     }
   }
+
+  .journey-group {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .journey-group-title {
+    @include sans_bold;
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .journey-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+
+    @include media_larger_than_mobile {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .journey-item {
+    margin: 0;
+  }
+
+  .journey-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    @include border-radius(4px);
+  }
+
+  .journey-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .journey-rotate-right {
+    width: 75%;
+    height: 75%;
+    transform: rotate(90deg);
+  }
+
+  .journey-rotate-left {
+    width: 75%;
+    height: 75%;
+    transform: rotate(-90deg);
+  }
+
+  .journey-rotate-half {
+    transform: rotate(180deg);
+  }
+
+  .journey-item figcaption {
+    margin-top: .5rem;
+    font-size: .875rem;
+    line-height: 1.3;
+    color: #666;
+    text-align: center;
+  }
 }
 
 // footer styles
