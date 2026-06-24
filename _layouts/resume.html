@@ -190,12 +190,19 @@
         <header class="section-header">
           <h2>Skills</h2>
         </header>
+        <div class="skill-grid">
         {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
+        <div class="skill-card">
+          {% if skill.image %}
+          <img src="{{ skill.image | relative_url }}" alt="{{ skill.skill }}" class="skill-icon">
+          {% endif %}
+          <h4 class="skill-name">{{ skill.skill }}</h4>
+          {% if skill.description %}
+          <p class="skill-description">{{ skill.description }}</p>
+          {% endif %}
         </div>
         {% endfor %}
+        </div>
 
       </section>
       <!-- end Skills -->

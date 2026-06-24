@@ -1,12 +1,64 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+- skill: Python
+  image: images/python.png
+  description: Programming
 
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
+- skill: C++
+  image: images/C++.png
+  description: Programming
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+- skill: MATLAB
+  image: images/matlab.png
+  description: Modeling & analysis
+
+- skill: Simulink
+  image: images/simulink.png
+  description: Control simulation
+
+- skill: ROS
+  image: images/ros.png
+  description: Robot software
+
+- skill: Arduino
+  image: images/arduino.png
+  description: Embedded prototyping
+
+- skill: Raspberry Pi
+  image: images/raspberry pi.png
+  description: Edge computing
+
+- skill: Jetson Nano
+  image: images/jetson nano.png
+  description: AI edge platform
+
+- skill: PyTorch
+  image: images/pytorch.png
+  description: Deep learning
+
+- skill: TensorFlow
+  image: images/tensorflow.png
+  description: Deep learning
+
+- skill: Google Colab
+  image: images/colab.png
+  description: Cloud notebooks
+
+- skill: NVIDIA Isaac
+  image: images/isaac.png
+  description: Robotics simulation
+
+- skill: Ansys
+  image: images/Ansys.png
+  description: Engineering simulation
+
+- skill: IPG CarMaker
+  image: images/IPG carmaker.png
+  description: Vehicle simulation
+
+- skill: AutoCAD
+  image: images/autocad.png
+  description: CAD design
+
+- skill: Autodesk Inventor
+  image: images/inventor.png
+  description: Mechanical design

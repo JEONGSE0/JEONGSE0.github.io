@@ -173,6 +173,50 @@
 
   .resume-item-copy { margin: .75rem 0 0; }
 
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    @include media_larger_than_mobile {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .skill-card {
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem .75rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    @include border-radius(4px);
+  }
+
+  .skill-icon {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: .75rem;
+  }
+
+  .skill-name {
+    @include sans_bold;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .skill-description {
+    margin: .35rem 0 0;
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #666;
+  }
+
   .project-media {
     margin: 1rem 0 0;
 
