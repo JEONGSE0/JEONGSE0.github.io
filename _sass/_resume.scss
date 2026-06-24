@@ -180,7 +180,7 @@
     video {
       display: block;
       width: 100%;
-      max-width: 640px;
+      max-width: 100%;
       height: auto;
       @include border-radius(4px);
     }
@@ -192,7 +192,17 @@
     }
   }
 
-  .project-media-grid,
+  .project-media-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .project-media {
+      margin: 0;
+    }
+  }
+
   .project-video-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -210,10 +220,8 @@
 
   .project-media-compact img,
   .project-media-compact video {
-    max-width: none;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    background: #000;
+    max-width: 100%;
+    object-fit: contain;
   }
 
   .project-validation-media {
@@ -223,7 +231,7 @@
 
     .project-media {
       width: 100%;
-      max-width: 640px;
+      max-width: 100%;
       margin: 0;
     }
   }
