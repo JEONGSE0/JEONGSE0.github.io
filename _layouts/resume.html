@@ -140,6 +140,9 @@
             </figure>
             {% endfor %}
           </div>
+          {% if project.graph_caption %}
+          <p class="project-graph-caption">{{ project.graph_caption }}</p>
+          {% endif %}
           {% endif %}
           {% if project.image %}
           <figure class="project-media">

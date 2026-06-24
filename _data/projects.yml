@@ -55,7 +55,6 @@
   media:
     - type: image
       src: images/carmaker.gif
-      caption: Results of RL-based braking control in intersection scenarios
   graphs:
     - src: images/carmaker 1.png
       caption: Braking scenario 1
@@ -63,6 +62,7 @@
       caption: Braking scenario 2
     - src: images/carmaker 3.png
       caption: Braking scenario 3
+  graph_caption: Results of RL-based braking control in intersection scenarios
 
 
 # Springfield Community Outreach Group
