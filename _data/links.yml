@@ -1,5 +1,12 @@
-# links
-- url: "#"
-  description: Springfield Jazz Enthusiasts
-- url: "#"
-  description: Springfield Young Professionals
+# Links
+- url: "paper/Curriculum Vitae.pdf"
+  description: "Curriculum Vitae"
+
+- url: "paper/Reinforcement Learning-Based Vehicle Autonomous Em.pdf"
+  description: "Reinforcement Learning-Based Vehicle Autonomous Emergency Braking System"
+
+- url: "paper/ROS를 이용한 사용자 동작 인식 기반 로봇 팔 제어.pdf"
+  description: "User Motion Recognition Based Robot Arm Control Using ROS"
+
+- url: "paper/적응 제어 알고리즘을 이용한 자동차 능동 현가장치 제어 특성.pdf"
+  description: "Control Characteristics of Active Suspension in Vehicles using AdaptiveControl Algorithm."
