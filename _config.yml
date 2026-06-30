@@ -54,6 +54,7 @@ resume_social_links:
   resume_linkedin_url:          "https://www.linkedin.com/in/jeongseo-jang-839211300/"
   # resume_instagram_url:         "insert your Instagram URL here"
   resume_website_url:           "https://jeongse0.github.io/"
+  resume_notion_url:            "https://jeongseo-jang.notion.site/welcome-to-my-portfolio"
   # resume_medium_url:            "https://medium.com/@jglovier"
 resume_print_social_links:      true
 

@@ -101,6 +101,10 @@
       fill: #333;
       @include transition(all .2s ease);
     }
+
+    &:hover .icon-notion path:first-child {
+      fill: #fff;
+    }
   }
 
   .icon {
@@ -257,6 +261,33 @@
     line-height: 1.25;
     color: #666;
     text-align: center;
+  }
+
+  .project-more-link {
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+
+    p {
+      margin: 0 0 .75rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    a {
+      display: inline-block;
+      padding: .65rem 1rem;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #333;
+      @include border-radius(4px);
+
+      &:hover {
+        background: #333;
+        color: #fff;
+      }
+    }
   }
 
   .project-video-grid {
